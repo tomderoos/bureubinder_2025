@@ -36,9 +36,8 @@ body::before {
 }
 
 .main-container {
-    max-width: 50%;
-    margin: 0;
-    margin-left: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -69,6 +68,11 @@ body::before {
     text-align: center;
     margin-bottom: 3rem;
     padding: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(79, 174, 108, 0.95);
+    backdrop-filter: blur(10px);
 }
 
 .company-name {
@@ -86,7 +90,7 @@ body::before {
     padding: 0.5rem 1.5rem;
     border-radius: 25px;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -200,8 +204,9 @@ body::before {
     .main-container {
         padding: 1rem;
         margin-top: 120px;
-        max-width: 70%;
-        margin-left: 1rem;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     body::before {
@@ -222,6 +227,10 @@ body::before {
         font-size: 2.5rem;
     }
     
+    .status-badge {
+        font-size: 1rem;
+    }
+    
     .main-content {
         padding: 1.5rem;
     }
@@ -238,8 +247,9 @@ body::before {
 @media (max-width: 480px) {
     .main-container {
         margin-top: 100px;
-        max-width: 80%;
-        margin-left: 1rem;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     body::before {
@@ -254,6 +264,10 @@ body::before {
     
     .company-name {
         font-size: 2rem;
+    }
+    
+    .status-badge {
+        font-size: 0.9rem;
     }
     
     .main-content {
